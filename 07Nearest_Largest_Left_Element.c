@@ -1,12 +1,14 @@
 // In this particular question I will be finding the largest nearest right number in the given array.
+#include<stdio.h>
 
-
-class PRG1{
-    public static void main (String args[])
-    {
-        int arr[]={4,5,2,25,11};
-        int i,j;
-        int val = 0;
+int main(){
+        int arr1[]={4,5,2,25,11};
+        int arr[5];
+        int i,j,temp=0,val=0;
+        for(i=4;i>=0;i--){
+            arr[temp]=arr1[i];
+            temp ++;
+        }
         for (i=0;i<=4;i++)
         {
             val = -1;
@@ -18,8 +20,8 @@ class PRG1{
                     break;
                 }
             }
-                System.out.println(arr[i]+"-->"+val);
-           
+                printf("%d ---> %d",arr[i],val);
+           printf("\n");
         }
-    }
+    return 0;
 }
