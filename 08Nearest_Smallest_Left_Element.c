@@ -1,4 +1,4 @@
-// In this particular question I will be finding the smallest nearest left number in the given array.
+// In this particular question, I will be finding the smallest nearest left number in the given array.
 #include<stdio.h>
 
 int main(){
